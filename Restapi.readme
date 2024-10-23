@@ -1,0 +1,18 @@
+A REST API (Representational State Transfer Application Programming Interface) 
+ it is a set of rules and conventions for building and interacting with web services
+ Definition:
+
+REST is an architectural style that uses standard HTTP methods and principles to allow communication between client and server. It is stateless, meaning each request from a client contains all the information needed to process that request.
+Major Functionalities:
+
+    CRUD Operations:
+        -Create: Using the POST method to add new resources.
+        -Read: Using the GET method to retrieve existing resources.
+        -Update: Using the PUT or PATCH methods to modify existing resources.
+        -Delete: Using the DELETE method to remove resources.
+
+        Use Cases:
+
+    -Web services for data access (e.g., retrieving user information, posting comments).
+    -Integration between different systems (e.g., third-party services accessing data).
+    -Mobile and web applications interacting with back-end services.
