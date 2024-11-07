@@ -2,16 +2,19 @@ import express,{json} from 'express';
 import bcrypt from 'bcrypt';
 import cors from 'cors';
 import { adminRoute } from './Routes/adminroutes.js';
+import cookieParser from 'cookie-parser';
 // import dotenv from 'dotenv'
 // dotenv.config()
 
 
 const app=express();
 app.use(cors({
-    // origin:'http://127.0.0.1:8000'
-    origin:'*'
+    origin:'http://127.0.0.1:5500',
+    // origin:'*',
+    credentials:true
 }))
 app.use(json())
+app.use(cookieParser())
 app.use('/',adminRoute)
 
 const port=8000;
